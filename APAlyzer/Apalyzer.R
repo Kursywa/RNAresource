@@ -208,7 +208,7 @@ for (bam_file in file_path) {
 	message("Extracting three prime most alignment from
 					the paired-end bam file: ", bam_file)
 	
-	ThreeMostPairBam (BamfilePath=flsall, 
+	ThreeMostPairBam (BamfilePath=bam_file, 
 									OutDirPath=ThreemostBamFolderPath, 
 									StrandType='forward-reverse')
 	}
